@@ -8,7 +8,7 @@ const Signup = () => {
     const [show, setShow] = useState(false);
     const [name, setName] = useState();
     const [email, setEmail] = useState();
-    const [confirmpassword, setConfirmPassword] = useState();
+    const [confirmPassword, setConfirmPassword] = useState();
     const [password, setPassword] = useState();
     const [pic, setPic] = useState();
 
@@ -38,6 +38,7 @@ const Signup = () => {
             onChange={(e)=>setEmail(e.target.value)}
         />
       </FormControl>
+
       <FormControl id='password' isRequired>
         <FormLabel>
             Password
@@ -45,7 +46,25 @@ const Signup = () => {
         <InputGroup size='md'>
             <Input
                 type={show ? 'text' : 'password'}
-                placeholder='Enter your name'
+                placeholder='Enter Your Password'
+                onChange={(e)=>setPassword(e.target.value)}
+            />
+            <InputRightElement width='4.5rem'>
+                <Button h='1.75rem' size='sm' onClick={handleClick}>
+                    {show ? 'Hide' : 'Show'}
+                </Button>
+            </InputRightElement>
+        </InputGroup>
+      </FormControl>
+
+      <FormControl id='password' isRequired>
+        <FormLabel>
+            Confirm Password
+        </FormLabel>
+        <InputGroup size='md'>
+            <Input
+                type={show ? 'text' : 'password'}
+                placeholder='Confirm Password'
                 onChange={(e)=>setConfirmPassword(e.target.value)}
             />
             <InputRightElement width='4.5rem'>
