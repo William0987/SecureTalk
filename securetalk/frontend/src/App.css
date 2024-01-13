@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&family=Josefin+Sans&family=Lobster&family=Londrina+Shadow&family=Pangolin&family=Roboto+Mono&family=Source+Code+Pro:wght@200&family=Work+Sans:wght@300&display=swap');
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  background-image: url("./signup.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
