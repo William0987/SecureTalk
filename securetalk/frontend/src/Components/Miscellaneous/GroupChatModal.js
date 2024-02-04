@@ -16,8 +16,8 @@ import {
 import axios from "axios";
 import { useState } from "react";
 import { ChatState } from "../../Context/ChatProvider";
-import UserBadgeItem from "../UserAvatar/UserBadgeItem"; 
-import UserListItem from "../UserAvatar/UserListItem"; 
+import UserBadgeItem from "../UserAvatar/UserBadgeItem";
+import UserListItem from "../UserAvatar/UserListItem";
 
 const GroupChatModal = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -81,7 +81,7 @@ const GroupChatModal = ({ children }) => {
   const handleSubmit = async () => {
     if (!groupChatName || !selectedUsers) {
       toast({
-        title: "Please fill all the feilds",
+        title: "Please Fill All The Fields",
         status: "warning",
         duration: 5000,
         isClosable: true,
@@ -166,6 +166,7 @@ const GroupChatModal = ({ children }) => {
               ))}
             </Box>
             {loading ? (
+              // <ChatLoading />
               <div>Loading...</div>
             ) : (
               searchResult
