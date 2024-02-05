@@ -2,7 +2,7 @@
 
 The application is a secure platform where users can privately chat with other users as well as form group chats with multiple users. This application essentially incorporates features such as live-time messaging, group chat formation, user search, adding users, live-time notifications, and user authentication.
 
-# SCREENSHOT OF THE GAME
+# SCREENSHOTS OF THE APPLICATION
 
 ![Alt text](image.png)
 ![Alt text](image1.png)
