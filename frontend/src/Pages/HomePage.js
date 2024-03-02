@@ -54,6 +54,22 @@ function HomePage() {
           </TabPanels>
         </Tabs>
       </Box>
+      <Box
+        d="flex"
+        justifyContent="center"
+        p={3}
+        bg="white"
+        w="100%"
+        m="40px 0 15px 0"
+        borderRadius="lg"
+        borderWidth="1px"
+      >
+        <Text>
+          <p>For Application Test Run</p>
+          <p>Sample Email: bob@gmail.com</p>                          
+          <p>Password: bob</p>
+        </Text>
+      </Box>
     </Container>
   );
 }
